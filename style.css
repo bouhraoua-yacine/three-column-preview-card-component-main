@@ -1,0 +1,149 @@
+:root {
+    --clr-primary-orange: hsl(31, 77%, 52%);
+    --clr-primary-cyan: hsl(184, 100%, 22%);
+    --clr-primary-drk-cyan: hsl(179, 100%, 13%);
+
+    --clr-neutral-white: hsla(0, 0%, 100%, 0.75);
+    --clr-neutral-gray: hsl(0, 0%, 95%);
+
+    --ff-primary: 'Big Shoulders Display', cursive;
+    --ff-neutral: 'Lexend Deca', sans-serif;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--clr-neutral-gray);
+    font-family: var(--ff-neutral);
+    font-size: 15px;
+}
+
+.container {
+    max-width: 327px;
+    margin: 87px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding-block: 48px;
+    padding-inline: 56px 39px;
+}
+
+.card__title {
+    font-family: var(--ff-primary);
+    color: var(--clr-neutral-gray);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 36px;
+    margin-bottom: 25px;
+}
+
+.card__text {
+    color: var(--clr-neutral-white);
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.card--orange {
+    background: var(--clr-primary-orange);
+    border-radius: 8px 8px 0 0;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--clr-neutral-gray);
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: 2px solid var(--clr-neutral-gray);
+}
+
+.btn:hover {
+    background: none;
+    color: var(--clr-neutral-gray)
+}
+
+
+.card--orange {
+    background: var(--clr-primary-orange);
+    border-radius: 8px 8px 0 0;
+}
+
+.card--blue {
+    background: var(--clr-primary-cyan);
+}
+
+.card--drk-blue {
+    background: var(--clr-primary-drk-cyan);
+    border-radius: 0 0 8px 8px;
+}
+
+.btn--orange {
+    color: var(--clr-primary-orange);
+}
+
+.btn--blue {
+    color: var(--clr-primary-cyan);
+}
+
+.btn--drk-blue {
+    color: var(--clr-primary-drk-cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(min-width: 800px) {
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 920px;
+        flex-direction: row;
+    }
+
+    .card {
+        max-width: 307px;
+    }
+
+    .card__text {
+        margin-bottom: 83px;
+        min-height: 150px;
+    }
+
+    .card--orange {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .card--drk-blue {
+        border-radius: 0 8px 8px 0;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+}
