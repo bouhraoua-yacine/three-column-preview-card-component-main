@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    max-width: 327px;
+    width: 327px;
     margin: 87px auto;
     display: flex;
     flex-direction: column;
@@ -117,17 +117,17 @@ body {
     }
 
     .container {
-        max-width: 920px;
+        width: 920px;
         flex-direction: row;
     }
 
     .card {
-        max-width: 307px;
+        width: 307px;
+        height: 500px;
     }
 
     .card__text {
         margin-bottom: 83px;
-        min-height: 150px;
     }
 
     .card--orange {
@@ -144,6 +144,4 @@ body {
         left: 50%;
         transform: translateX(-50%);
     }
-
-
 }
